@@ -14,9 +14,10 @@ class MainMenu : AppCompatActivity() {
         setContentView(R.layout.activity_main_menu)
     }
 
-    fun takeOnBird(view: View) {
-        val randomIntent = Intent(this, MainMenu::class.java)
+    fun takeOnLetter(view: View) {
+        val randomIntent = Intent(this, MainActivity::class.java)
         startActivity(randomIntent)
     }
 }
+
 

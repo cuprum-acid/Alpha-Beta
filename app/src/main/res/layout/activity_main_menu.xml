@@ -35,7 +35,7 @@
             android:id="@+id/a"
             style="@style/Text"
             android:layout_width="130dp"
-            android:onClick="takeOnBird"
+            android:onClick="takeOnLetter"
             android:text="A a" />
 
         <TextView
