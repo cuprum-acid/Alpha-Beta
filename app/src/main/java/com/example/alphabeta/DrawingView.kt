@@ -23,6 +23,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
     private lateinit var canvasBitmap: Bitmap
     //brush sizes
 
+    private val medium = 20F
 
     private var erase = false
 
@@ -37,6 +38,8 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
         drawPaint.style = Paint.Style.STROKE
         drawPaint.strokeJoin = Paint.Join.ROUND
         drawPaint.strokeCap = Paint.Cap.ROUND
+        drawPaint.strokeWidth = medium
+
     }
 
     //size assigned to view
@@ -98,10 +101,10 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
     }
 
     fun setBrushSize(newSize: Float) {
-        val pixelAmount = TypedValue.applyDimension(
+        val pixelAmount = 100 /*TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP,
             newSize, resources.displayMetrics
-        )
+        )*/
 
     }
 

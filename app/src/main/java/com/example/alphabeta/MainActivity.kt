@@ -1,24 +1,18 @@
 package com.example.alphabeta
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
-import android.app.Activity
-import android.app.AlertDialog
-import android.app.Dialog
-import android.content.pm.PackageManager
-import android.os.Build
-import android.provider.MediaStore
-import android.view.View
-import android.widget.ImageButton
-import android.widget.SeekBar
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.view.children
 
-import java.util.*
+
+import android.app.Activity
+import android.os.Bundle
+import android.view.Gravity
+import android.view.View
+import android.widget.TextView
+import android.widget.ViewFlipper
+
 
 class MainActivity : Activity() {
+   private var viewFlipper: ViewFlipper? = null
+
     companion object {
         const val DEFAULT_100_PERCENT = 100
     }
@@ -26,6 +20,25 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        viewFlipper = findViewById(R.id.view_flipper)
+        val textView = TextView(this)
+        textView.text = "Dynamically added TextView"
+        textView.gravity = Gravity.CENTER
+       /* viewFlipper.addView(textView)
+        viewFlipper.setFlipInterval(2000)
+        viewFlipper.startFlipping()*/
+
+    }
+    fun nextView(v: View?) {
+        viewFlipper!!.setOutAnimation(this, R.anim.slide_in_right)
+        viewFlipper!!.setInAnimation(this, R.anim.slide_out_left)
+        viewFlipper!!.showNext()
+    }
+
+    fun previousView(v: View?) {
+        viewFlipper!!.setInAnimation(this, R.anim.slide_in_right)
+        viewFlipper!!.setOutAnimation(this, R.anim.slide_out_left)
+        viewFlipper!!.showPrevious()
     }
 
 }
