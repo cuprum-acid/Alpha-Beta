@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sheet"
+    tools:context=".MainActivity">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/arrow2"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/arrow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.514" />
+
+                    <ImageView
+                        android:id="@+id/vopros_write"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/vopros"
+                        android:contentDescription="TODO"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.514" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/letter"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/fontlobster"
+                android:text="A a"
+                android:textColor="#9F1818"
+                android:textSize="36pt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/letter2"
+
+                android:layout_width="218dp"
+                android:layout_height="152dp"
+                android:layout_marginTop="92dp"
+                android:fontFamily="@font/robotmedium"
+                android:text="  A a"
+                android:textColor="#9F1818"
+                android:textSize="36pt"
+                app:layout_constraintEnd_toStartOf="@+id/letter"
+                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/letter3"
+                android:layout_width="389dp"
+                android:layout_height="67dp"
+                android:fontFamily="@font/fontlobster"
+                android:gravity="center"
+                android:text="Напиши букву А "
+                android:textColor="#9F1818"
+                android:textSize="20pt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/letter2" />
+
+            <com.example.alphabeta.DrawingView
+                android:id="@+id/drawingView"
+                android:layout_width="0dp"
+                android:layout_height="350dp"
+                android:background="@drawable/aletter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/letter3"
+                app:layout_constraintTop_toBottomOf="@+id/letter3" />
+
+            <Button
+                android:layout_width="106dp"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="nextView"
+                android:text="Далее"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drawingView"
+                app:layout_constraintVertical_bias="0.644" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/arrow1"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/arrow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.514" />
+
+                    <ImageView
+                        android:id="@+id/vopros_read"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/vopros"
+                        android:contentDescription="TODO"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.514" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/letterd"
+                style="@style/Text"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:fontFamily="@font/fontlobster"
+                android:text="A a"
+                android:textColor="#9F1818"
+                android:textSize="45pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.323" />
+
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/melon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/letterd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.323" />
+
+            <ImageView
+                android:id="@+id/speak"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/micro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.662" />
+
+            <TextView
+                android:id="@+id/text"
+                style="@style/Text"
+                android:layout_width="fill_parent"
+                android:layout_height="82dp"
+                android:fontFamily="@font/fontlobster"
+                android:gravity="center"
+                android:text="Нажми на микрофон"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/speak"
+                app:layout_constraintVertical_bias="0.098" />
+
+            <Button
+                android:layout_width="106dp"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:onClick="previousView"
+                android:text="Назад"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
