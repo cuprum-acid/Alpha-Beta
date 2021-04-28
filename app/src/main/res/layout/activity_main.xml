@@ -84,6 +84,7 @@
                 android:layout_height="152dp"
                 android:layout_marginTop="92dp"
                 android:text="  A a"
+                android:fontFamily="@font/robotmedium"
                 android:textColor="#9F1818"
                 android:textSize="36pt"
                 app:layout_constraintEnd_toStartOf="@+id/letter"
@@ -181,6 +182,7 @@
                 style="@style/Text"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
+                android:fontFamily="@font/fontlobster"
                 android:text="A a"
                 android:textColor="#9F1818"
                 android:textSize="45pt"
@@ -213,19 +215,23 @@
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.674" />
+                app:layout_constraintVertical_bias="0.662" />
 
             <TextView
                 android:id="@+id/result"
                 style="@style/Text"
+                android:layout_width="fill_parent"
+                android:layout_height="82dp"
+                android:fontFamily="@font/fontlobster"
+                android:gravity="center"
                 android:text="Нажми на микрофон"
-                android:layout_width="299dp"
-                android:layout_height="62dp"
+                android:textSize="35dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rec"
-                app:layout_constraintVertical_bias="0.441" />
+                app:layout_constraintVertical_bias="0.098" />
 
             <Button
                 android:layout_width="106dp"

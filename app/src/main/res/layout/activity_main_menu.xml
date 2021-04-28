@@ -10,21 +10,25 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="160dp"
-        android:layout_height="52dp"
+        android:layout_width="290dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/robotmedium"
+        android:gravity="center"
         android:text="AlphaBeta"
         android:textColor="#09215E"
-        android:textSize="30dp"
+        android:textSize="45dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="387dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="132dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -33,22 +37,22 @@
 
         <TextView
             android:id="@+id/a"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="130dp"
             android:onClick="takeOnLetter"
             android:text="A a" />
 
         <TextView
             android:id="@+id/b"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="134dp"
             android:layout_height="fill_parent"
             android:text="Б б" />
 
         <TextView
             android:id="@+id/v"
-            style="@style/Text"
-            android:layout_width="93dp"
+            style="@style/AlphaBet"
+            android:layout_width="117dp"
             android:layout_height="match_parent"
             android:text="В в" />
 
@@ -58,7 +62,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
         android:layout_height="54dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -67,21 +71,21 @@
 
         <TextView
             android:id="@+id/g"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="Г г" />
 
         <TextView
             android:id="@+id/d"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="Д д" />
 
         <TextView
             android:id="@+id/e"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="98dp"
             android:layout_height="match_parent"
             android:text="Е е" />
@@ -91,7 +95,7 @@
         android:id="@+id/linearLayout4"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -100,21 +104,21 @@
 
         <TextView
             android:id="@+id/i"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="И и" />
 
         <TextView
             android:id="@+id/iy"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="Й й" />
 
         <TextView
             android:id="@+id/k"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:text="К к" />
@@ -124,8 +128,7 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="fill_parent"
-        android:layout_height="59dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -134,21 +137,21 @@
 
         <TextView
             android:id="@+id/l"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="Л л" />
 
         <TextView
             android:id="@+id/m"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="М м" />
 
         <TextView
             android:id="@+id/n"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Н н" />
@@ -158,8 +161,7 @@
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="fill_parent"
-        android:layout_height="61dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -168,21 +170,21 @@
 
         <TextView
             android:id="@+id/o"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="О о" />
 
         <TextView
             android:id="@+id/p"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="П п" />
 
         <TextView
             android:id="@+id/r"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="102dp"
             android:layout_height="match_parent"
             android:text="Р р" />
@@ -191,8 +193,7 @@
     <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="fill_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -201,21 +202,21 @@
 
         <TextView
             android:id="@+id/s"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="С с" />
 
         <TextView
             android:id="@+id/t"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="Т т" />
 
         <TextView
             android:id="@+id/u"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="У у" />
@@ -224,8 +225,7 @@
     <LinearLayout
         android:id="@+id/linearLayout8"
         android:layout_width="fill_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -234,21 +234,21 @@
 
         <TextView
             android:id="@+id/f"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="Ф ф" />
 
         <TextView
             android:id="@+id/h"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="Х х" />
 
         <TextView
             android:id="@+id/ts"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Ц ц" />
@@ -267,22 +267,22 @@
 
         <TextView
             android:id="@+id/ch"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="Ч ч" />
 
         <TextView
             android:id="@+id/sh"
-            style="@style/Text"
-            android:layout_width="132dp"
+            style="@style/AlphaBet"
+            android:layout_width="120dp"
             android:layout_height="fill_parent"
             android:text="Ш ш" />
 
         <TextView
             android:id="@+id/shee"
-            style="@style/Text"
-            android:layout_width="fill_parent"
+            style="@style/AlphaBet"
+            android:layout_width="105dp"
             android:layout_height="fill_parent"
             android:text="Щ щ" />
     </LinearLayout>
@@ -290,8 +290,7 @@
     <LinearLayout
         android:id="@+id/linearLayout10"
         android:layout_width="fill_parent"
-        android:layout_height="63dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -300,21 +299,21 @@
 
         <TextView
             android:id="@+id/hard"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="Ъ ъ" />
 
         <TextView
             android:id="@+id/it"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="Ы ы" />
 
         <TextView
             android:id="@+id/soft"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Ь ь" />
@@ -322,8 +321,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="57dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -332,21 +330,21 @@
 
         <TextView
             android:id="@+id/et"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="Э э" />
 
         <TextView
             android:id="@+id/yu"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="Ю ю" />
 
         <TextView
             android:id="@+id/ya"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:text="Я я" />
@@ -355,9 +353,11 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="fill_parent"
-        android:layout_height="54dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="44dp"
+
+        android:layout_marginBottom="6dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -365,21 +365,21 @@
 
         <TextView
             android:id="@+id/yo"
-            style="@style/Text"
+            style="@style/AlphaBetGlas"
             android:layout_width="130dp"
             android:layout_height="fill_parent"
             android:text="Ё ё" />
 
         <TextView
             android:id="@+id/zh"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="132dp"
             android:layout_height="fill_parent"
             android:text="Ж ж" />
 
         <TextView
             android:id="@+id/z"
-            style="@style/Text"
+            style="@style/AlphaBet"
             android:layout_width="95dp"
             android:layout_height="wrap_content"
             android:text="З з" />
